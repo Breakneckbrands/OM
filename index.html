@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medication Delivery Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- The form for input parameters -->
+    <form id="medicationCalculator">
+        <label>
+            Tubing Length (cm):
+            <input type="number" id="tubingLength" placeholder="Enter length in cm">
+        </label>
+        <label>
+            Catheter Diameter:
+            <select id="catheterDiameter"></select>
+        </label>
+        <label>
+            IV Pump Flow Rate (mL/hr):
+            <input type="number" id="flowRate" placeholder="Enter mL/hr">
+        </label>
+        <button type="submit">Calculate</button>
+        <button type="reset" id="resetBtn">Reset</button>
+    </form>
+
+    <!-- Display the result -->
+    <div id="result">The time for medication to reach the patient is: <span id="computedTime"></span></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
